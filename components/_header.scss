@@ -1,0 +1,113 @@
+.header{
+    
+    font-size: var(--fs-300);
+    gap: var(--gap);
+
+    &__nav{
+        --gap: 2.5rem;
+        gap: var(--gap);
+
+        @media screen and (max-width: 60em){
+            --gap: 2rem;
+            flex-direction: column;
+            padding-top: 5rem;
+            padding-left: 1.5rem;
+        }
+    }
+
+    &__links{
+        position: relative;
+    }
+
+    &__text{
+        --gap: 0.5rem;
+        gap: var(--gap);
+    }
+
+    &__right{
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (max-width: 60em){
+            --gap: 2.5rem;
+            width: 65%;
+            position: fixed;
+            top: 0;
+            right: 0 ;
+            height: 100vh;
+            background-color: var(--clr-white);
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: baseline;
+            gap: var(--gap);
+            transform: translateX(100%);
+            transition: transform 0.3s;
+            z-index: 9999;
+        }
+    }
+
+    &__signup{
+        --gap: 2.5rem;
+        gap: var(--gap);
+        
+        @media screen and (max-width: 60em){
+            --gap: 1rem;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            padding-inline: 1.5rem;
+        }
+
+    }
+
+    &__register{
+        color: inherit;
+        background-color: transparent;
+        border: 1px solid var(--clr-grey);
+        padding: 0.75rem 1.125rem;
+        border-radius: 1rem;
+
+        @media screen and (max-width: 60em){
+            width: 100%;
+        }
+    }
+
+
+    &__arrow{
+
+        &--up{
+            display: none;
+        }
+
+        &--down{
+            display: block;
+        }
+    }
+
+    &__menu{
+        display: none;
+
+        @media screen and (max-width: 60em){
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    &__close{
+        display: none;
+
+        @media screen and (max-width: 60em){
+            position: absolute;
+            cursor: pointer;
+            top: 1.5rem;
+            right: 1rem;
+            z-index: 10000;
+        }
+    }
+
+    @media screen and (max-width: 60em) {
+        padding-inline: 1rem;
+        justify-content: space-between;
+    }
+}

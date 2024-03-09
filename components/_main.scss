@@ -1,0 +1,103 @@
+.main{
+    --gap: 9.6875rem;
+    max-width: 1145px;
+    margin-top: 4.25rem;
+    margin-inline: auto;
+    gap: var(--gap);
+
+    &__heading{
+        font-size: var(--fs-900);
+        color: var(--clr-black);
+        font-weight: var(--fw-700);
+        line-height: 1.1;
+    }
+
+    &__text{
+        line-height: 1.4;
+        font-size: var(--fs-400);
+        margin-block: 3rem;
+
+        @media screen and (max-width: 60em){
+            margin-block: 1rem;
+        }
+    }
+
+    &__button{
+        background-color: var(--clr-black);
+        color: var(--clr-white);
+        font-size: var(--fs-400);
+        font-weight: var(--fw-700);
+        padding:1.125rem 1.75rem;
+        border-radius: 1rem;
+        margin-bottom: 6.75rem;
+        border: 1px solid var(--clr-black);
+
+        @media screen and (max-width: 60em){
+            margin-block: 0.5rem 3rem;
+            padding: 0.875rem 1.25rem;
+        }
+    }
+
+    &__left{
+        @media screen and (max-width: 60em){
+            padding-inline: 1rem;
+        }
+    }
+
+    &__logos{
+
+        @media screen and (max-width: 60em){
+            --gap: 1.75rem;
+            gap: var(--gap);
+        }
+    }
+
+    &__logo{
+        @media screen and (max-width: 60em){
+            &:nth-child(1){
+                max-width: 80px;
+            }
+
+            &:nth-child(2){
+                max-width: 54px;
+            }
+
+            &:nth-child(3){
+                max-width: 64px;
+            }
+
+            &:nth-child(4){
+                max-width: 60px;
+            }
+        }
+    }
+
+    &__hero{
+
+        &--desktop{
+            max-width: 480px;
+        }
+
+        &--mobile{
+            display: none;
+        }
+
+        @media screen and (max-width: 60em){
+
+            &--desktop{
+                display: none;
+            }
+
+            &--mobile{
+                display: block;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 60em){
+        --gap: 3rem;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+}

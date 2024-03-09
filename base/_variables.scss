@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --ff-primary: "Epilogue", sans-serif;
+
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-900: 4.75rem;
+
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --clr-white: hsl(0, 0%, 98%);
+    --clr-grey: hsl(0, 0%, 41%);
+    --clr-black: hsl(0, 0%, 8%);
+
+    --gap: 4rem;
+
+    @media screen and (max-width: 60em){
+        
+        --fs-300: 1.125rem;
+        --fs-400: 1rem;
+        --fs-900: 2.125rem;
+    }
+}

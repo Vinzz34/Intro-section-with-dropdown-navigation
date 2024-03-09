@@ -1,0 +1,28 @@
+.hover{
+    transition: border-color,background-color,color 0.3s;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--clr-black);
+        border-color: var(--clr-black);
+        background-color: var(--white);
+    }
+}
+
+.show{
+    transform: translateX(0%);
+}
+
+.bg-overlay{
+    @media screen and (max-width: 60em) {
+       background-color: rgba(0,0,0,0.3); 
+       position: absolute;
+       inset: 0;
+    }
+}
+
+.overflow-hidden{
+    @media screen and (max-width: 60em){
+        overflow-y: hidden;
+    }
+}

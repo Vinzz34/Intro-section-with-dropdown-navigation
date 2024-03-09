@@ -1,0 +1,14 @@
+body{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-500);
+    color: var(--clr-grey);
+    background-color: var(--clr-white);
+    padding-top: 2rem;
+    padding-inline: 2.5rem;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 60em){
+        padding-top: 1.5rem;
+        padding-inline: 0;
+    }
+}

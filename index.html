@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header flex flex--ai-c">
+      <div class="header__left">
+        <img src="images/logo.svg" alt="" class="header__logo" />
+      </div>
+      <div class="header__right flex" id="navbar">
+        <ul class="header__nav flex">
+          <li class="header__links">
+            <div class="header__text flex flex--ai-c dropdown-btn">
+              <a class="hover" href="#">Features</a>
+              <img
+                src="images/icon-arrow-down.svg"
+                class="header__arrow--down"
+                alt=""
+              />
+              <img
+                src="images/icon-arrow-up.svg"
+                class="header__arrow--up"
+                alt=""
+              />
+            </div>
+            <ul class="dropdown">
+              <li class="dropdown__left grid grid--ji-c">
+                <img src="images/icon-todo.svg" alt="" />
+                <img src="images/icon-calendar.svg" alt="" />
+                <img src="images/icon-reminders.svg" alt="" />
+                <img src="images/icon-planning.svg" alt="" />
+              </li>
+              <li class="dropdown__right grid">
+                <a class="hover" href="/">Todo List</a>
+                <a class="hover" href="/">Calender</a>
+                <a class="hover" href="/">Reminders</a>
+                <a class="hover" href="/">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__links">
+            <div class="header__text flex flex--ai-c dropdown-btn">
+              <a class="hover" href="#">Company</a>
+              <img
+                src="images/icon-arrow-down.svg"
+                class="header__arrow--down"
+                alt=""
+              />
+              <img
+                src="images/icon-arrow-up.svg"
+                class="header__arrow--up"
+                alt=""
+              />
+            </div>
+            <ul class="dropdown dropdown--company flex--col">
+              <li>
+                <a class="hover" href="/">History</a>
+              </li>
+              <li>
+                <a class="hover" href="/">Our Team</a>
+              </li>
+              <li>
+                <a class="hover" href="/">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__links"><a class="hover" href="/">Careers</a></li>
+          <li class="header__links"><a class="hover" href="/">About</a></li>
+        </ul>
+        <div class="header__signup flex flex--ai-c">
+          <a href="/" class="header__login hover">Login</a>
+          <button class="header__register hover">Register</button>
+        </div>
+      </div>
+      <img class="header__menu" id="menu" src="images/icon-menu.svg" alt="" />
+      <img
+        class="header__close"
+        id="close"
+        src="images/icon-close-menu.svg"
+        alt=""
+      />
+    </header>
+    <main class="main flex flex--ai-fe flex--col-rev">
+      <div class="main__left">
+        <h1 class="main__heading">Make remote work</h1>
+        <p class="main__text">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="main__button hover">Learn more</button>
+        <div class="main__logos flex flex--ai-c flex--jc-sb">
+          <img class="main__logo" src="images/client-databiz.svg" alt="" />
+          <img class="main__logo" src="images/client-audiophile.svg" alt="" />
+          <img class="main__logo" src="images/client-meet.svg" alt="" />
+          <img class="main__logo" src="images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <img
+        class="main__hero--desktop"
+        src="images/image-hero-desktop.png"
+        alt=""
+      />
+      <img
+        class="main__hero--mobile"
+        src="images/image-hero-mobile.png"
+        alt=""
+      />
+    </main>
+    <div id="bg-overlay"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.dropdown{
+    --gap:1rem;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    gap: var(--gap);
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background-color: var(--clr-white);
+    width: max-content;
+    display: none;
+    z-index: 1;
+
+    &__left,&__right{
+        gap: var(--gap);
+    }
+
+    &--company{
+        --gap:1.125rem;
+        left: 0;
+        gap: var(--gap);
+    }
+
+    @media  screen and (max-width: 60em) {
+        --gap: 1.25rem;
+        position: static;
+        box-shadow: none;
+        padding-block: 2rem 0;
+    }
+}
